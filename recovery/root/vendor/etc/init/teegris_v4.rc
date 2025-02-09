@@ -18,6 +18,7 @@ service tz_service /vendor/bin/tzdaemon
     class core
     user root
     group root readproc
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
     disabled
     seclabel u:r:recovery:s0
 
@@ -25,5 +26,6 @@ service tzts_service /vendor/bin/tzts_daemon
     class core
     user root
     group root
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
     disabled
     seclabel u:r:recovery:s0
