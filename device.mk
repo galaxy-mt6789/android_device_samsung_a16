@@ -1,8 +1,2 @@
-#
-# Copyright (C) 2025 The Android Open Source Project
-# Copyright (C) 2025 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-
-LOCAL_PATH := device/samsung/a16
+# Inherit from common tree
+$(call inherit-product, device/samsung/mt6789-common/twrp_mt6789-common.mk)
